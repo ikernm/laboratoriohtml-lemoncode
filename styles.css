@@ -32,6 +32,10 @@ h1 {
     margin: 36px;
 }
 
+.images-web {
+    border-radius: 15px;
+}
+
 footer {
     background-color: #212429;
     color: #ffffff;
@@ -43,4 +47,6 @@ footer {
 
 .icons-footer {
     background-color: #ffffff;
+    padding: 15px;
+    border-radius: 21px;
 }
