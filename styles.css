@@ -7,16 +7,32 @@
 
 .navbar {
     font-size: 16px;
-    padding: 8px;
-    margin: 8px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
 }
 
 .navbar a{
     color:#212429;
     text-decoration: none;
+}
+
+.icono-menu {
+    margin-left: 5px;
+}
+
+.moda a {
+    padding: 16px;
+
+}
+
+.iconos a {
+    padding: 16px;
+
+}
+
+.colecciones {
+    margin: 8px;
+    
 }
 
 h1 {
@@ -26,13 +42,15 @@ h1 {
 
 .products {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 12px;
+    width: 100%;
 }
 
 .images {
     padding: 10px;
     border-radius: 25px;
+
 }
 
 .informacion {
@@ -47,10 +65,58 @@ footer {
     padding: 12px;
     margin: 12px;
     width: 100%;
-    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item {
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .footer-icon {
     background-color: #ffffff;
-    display: flex;
+    border: 8px;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.footer-item span {
+    margin-left: 5px;
+}
+
+@media (max-width: 920px) {
+
+    .moda {
+        display: none;
+    }
+
+    .iconos {
+        display: none;
+    }
+
+    .icono-menu {
+        margin: 0 auto;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products span{
+        justify-content: space-between;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        padding: 10px;
+        border-bottom: solid 1px #ffffff;
+        
+    }
+
 }
